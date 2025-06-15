@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mature’s Trade - Your Trading Platform</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-900">Mature’s Trade</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-600 hover:text-green-600">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-green-600">About</a>
+                <a href="#features" class="text-gray-600 hover:text-green-600">Features</a>
+                <a href="#contact" class="text-gray-600 hover:text-green-600">Contact</a>
+            </div>
+            <!-- Hamburger Menu for Mobile -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <a href="#home" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home</a>
+            <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">About</a>
+            <a href="#features" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Features</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Trade Smarter with Mature’s Trade</h1>
+            <p class="text-lg md:text-xl mb-6">Your gateway to seamless, secure, and profitable trading.</p>
+            <a href="/mainpage.html" class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600">Start Trading Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12 animate-fade-in">About Mature’s Trade</h2>
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <!-- Text Content -->
+            <div class="lg:w-1/2 animate-slide-up">
+                <p class="text-lg text-gray-600 mb-6">
+                    Mature’s Trade is a leading platform for [stocks, crypto, and forex] trading, designed to empower both novice and experienced traders. Founded in [year], our mission is to democratize wealth creation through innovative tools and unparalleled support.
+                </p>
+                <p class="text-lg text-gray-600 mb-6">
+                    With real-time market data, advanced charting, and a secure trading environment, we provide everything you need to succeed. Our team of financial experts and tech innovators is dedicated to delivering a seamless trading experience.
+                </p>
+                <a href="#contact" class="inline-block bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition-colors duration-300">
+                    Meet Our Team
+                </a>
+            </div>
+            <!-- Image Content -->
+            <div class="lg:w-1/2 animate-slide-up">
+                <img src="https://via.placeholder.com/600x400" alt="Mature’s Trade Platform" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-12">Why Trade with Mature’s Trade?</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-center">
+                <div class="text-green-500 mb-4">
+                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-blue-900 mb-4">Real-Time Market Data</h3>
+                <p class="text-gray-600">Stay ahead with live price updates and market trends for informed trading decisions.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-center">
+                <div class="text-green-500 mb-4">
+                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0-1.1.9-2 2-2h4a2 2 0 012 2v4a2 2 0 01-2 2h-4a2 2 0 01-2-2v-4z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-blue-900 mb-4">Low Trading Fees</h3>
+                <p class="text-gray-600">Maximize profits with competitive, transparent fees on every trade.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-center">
+                <div class="text-green-500 mb-4">
+                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-blue-900 mb-4">Bank-Grade Security</h3>
+                <p class="text-gray-600">Trade with confidence using advanced encryption and secure transactions.</p>
+            </div>
+            <!-- Feature 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-center">
+                <div class="text-green-500 mb-4">
+                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2V9a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-blue-900 mb-4">Advanced Charting Tools</h3>
+                <p class="text-gray-600">Analyze markets with professional-grade charts and technical indicators.</p>
+            </div>
+            <!-- Feature 5 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-center">
+                <div class="text-green-500 mb-4">
+                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-blue-900 mb-4">Mobile Trading App</h3>
+                <p class="text-gray-600">Trade on the go with our intuitive iOS and Android apps.</p>
+            </div>
+            <!-- Feature 6 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-center">
+                <div class="text-green-500 mb-4">
+                    <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2m-4 0H7a2 2 0 01-2-2v-6a2 2 0 012-2h2m4 0V6a2 2 0 00-2-2H7a2 2 0 00-2 2v2" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-blue-900 mb-4">24/7 Customer Support</h3>
+                <p class="text-gray-600">Get help anytime with our dedicated support team.</p>
+            </div>
+        </div>
+    </div>
+</section> </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 Mature’s Trade. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-green-400">Privacy Policy</a>
+                <a href="#" class="hover:text-green-400">Terms of Service</a>
+                <a href="#contact" class="hover:text-green-400">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>
